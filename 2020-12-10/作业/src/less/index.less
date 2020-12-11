@@ -1,0 +1,45 @@
+.mixi(@size,@color,@direction){
+  width: 0;
+  height: 0;
+  border: @size solid transparent;
+  border-@{direction}:@size  solid @color;
+}
+ul{
+  list-style: none;
+  width: 1200px;
+  li:nth-child(1){
+    .mixi(100px,red,right);
+
+  }
+  li:nth-child(2){
+    .mixi(50px,blue,right);
+
+  }
+  li:nth-child(3){
+    .mixi(100px,red,top);
+
+  }
+  li:nth-child(4){
+    .mixi(50px,black,top);
+
+  }
+  li:nth-child(5){
+    .mixi(100px,red,left);
+
+  }
+  li:nth-child(6){
+    .mixi(50px,blue,left);
+
+  }
+  li:nth-child(7){
+    .mixi(100px,red,bottom);
+
+  }
+  li:nth-child(8){
+    .mixi(50px,blue,bottom);
+
+  }
+}
+ul li{
+  float: left;
+}
